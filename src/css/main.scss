@@ -2,7 +2,6 @@ body
 {
     margin: 0;
     font-size: 1.2em;
-    font-family: 'ZCOOL KuaiLe', cursive;
 }
 
 #root
@@ -13,21 +12,23 @@ body
 #add-todo-btn
 {
     background-color:turquoise;
-    padding: 1;
+    padding: 0.5em;
+    border-style: none;
 }
 
 #clear-complete-btn
 {
     background-color:darkgoldenrod;
     padding: 0.5em;
-    border-radius: 99%;
+    border-style:none;
+    margin-right: 0.2em;
 }
 
 #clear-everything-btn
 {
     background-color: crimson;
     padding: 0.5em;
-    border-radius: 90%;
+    border-style:none;
 }
 
 #todo-label
@@ -39,4 +40,10 @@ body
 #bottom-btn
 {
     margin-top: 2em;
+}
+
+#todo-text
+{
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
 }

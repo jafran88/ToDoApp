@@ -52,20 +52,25 @@ function App() {
 
   return (
     <> 
-    <input ref = {todoNameRef} type = "text" />
+    <input id ="todo-text" ref = {todoNameRef} type = "text" />
     <button id = "add-todo-btn" onClick= {handleAddTodo}>Add Todo</button><br />
+
     <div>
     {list.filter(element => element.complete === false).length} Todo left <br />
     <TodoList list = {list} hanldeCompleteClick =  {handleCompleteClick}/>
+
       <div id = "bottom-btn">
         <button id="clear-complete-btn" onClick = {handleClearBtn}>
           Clear Complete
         </button>
+
         <button id="clear-everything-btn" onClick = {handleClearEverything}>
            Clear Everything
         </button><br />
       </div>
+
     </div>
+
     </>
   );
 }
