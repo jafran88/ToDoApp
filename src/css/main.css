@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  margin: 1em;
+}
+
+#add-todo-btn {
+  background-color: turquoise;
+  padding: 0.5em;
+  margin-left: 0.25em;
+  border-style: none;
+}
+
+#clear-complete-btn {
+  background-color: darkgoldenrod;
+  padding: 0.5em;
+  border-style: none;
+  margin-right: 0.2em;
+}
+
+#clear-everything-btn {
+  background-color: crimson;
+  padding: 0.5em;
+  border-style: none;
+}
+
+#todo-label {
+  color: blue;
+  background-color: yellow;
+}
+
+#bottom-btn {
+  margin-top: 2em;
+}
+
+#todo-text {
+  padding-top: 0.35em;
+  padding-bottom: 0.35em;
+}
+/*# sourceMappingURL=main.css.map */

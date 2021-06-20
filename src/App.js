@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import TodoList from './TodoList';
 import uuidv4 from 'uuid/dist/v4'
+import "./css/main.css"
 
 function App() {
   const LOCAL_STORAGE_KEY = "TodoApp.List"
@@ -43,13 +44,33 @@ function App() {
     setList(newList);
   }
 
+  function handleClearEverything()
+  {
+    const newList = []
+    setList(newList);
+  }
+
   return (
-    <>  
+    <> 
+    <input id ="todo-text" ref = {todoNameRef} type = "text" />
+    <button id = "add-todo-btn" onClick= {handleAddTodo}>Add Todo</button><br />
+
+    <div>
+    {list.filter(element => element.complete === false).length} Todo left <br />
     <TodoList list = {list} hanldeCompleteClick =  {handleCompleteClick}/>
-    <input ref = {todoNameRef} type = "text" />
-    <button onClick= {handleAddTodo}>Add Todo</button>
-    <button onClick = {handleClearBtn}>Clear Complete</button>
-    <div>{list.filter(element => element.complete === false).length} Todo left</div>
+
+      <div id = "bottom-btn">
+        <button id="clear-complete-btn" onClick = {handleClearBtn}>
+          Clear Complete
+        </button>
+
+        <button id="clear-everything-btn" onClick = {handleClearEverything}>
+           Clear Everything
+        </button><br />
+      </div>
+
+    </div>
+
     </>
   );
 }
