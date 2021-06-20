@@ -4,6 +4,11 @@ body
     font-size: 1.2em;
 }
 
+button
+{
+    cursor: pointer;
+}
+
 #root
 {
     margin: 1em;    
@@ -13,6 +18,7 @@ body
 {
     background-color:turquoise;
     padding: 0.5em;
+    margin-left: 0.25em;
     border-style: none;
 }
 
